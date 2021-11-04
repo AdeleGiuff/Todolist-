@@ -1,1 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: "Lobster", cursive;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+  background-blend-mode: screen;
+  margin: 0;
+}
+
+#myInput1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+p {
+  margin-left: 0px;
+}
+
+.ul {
+  margin-top: -1px; /* Prevent double borders */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(75, 75, 75);
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+}
+
+.ul .li:hover {
+  background: rgba(122, 43, 161, 0.116);
+}
+
+/* Style the close button (span) */
+.confirmButton,
+.editButton,
+.doneButton,
+.del {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 15px;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+  border: none;
+  background-color: transparent;
+}
+
+.del {
+  right: 0%;
+}
+
+.editButton {
+  right: 19%;
+}
+
+.doneButton {
+  right: 8%;
+}
+.confirmButton {
+  right: 29%;
+}
+.editButton:hover {
+  background-color: rgba(33, 88, 189, 0.349);
+}
+
+.del:hover {
+  color: rgba(230, 0, 0, 0.664);
+}
+.doneButton:hover {
+  background-color: rgba(0, 128, 0, 0.438);
+}
+.confirmButton:hover {
+  background-color: rgba(223, 226, 36, 0.459);
+}
+.clearAllButton {
+  margin-top: 20px;
+  margin-right: 50%;
+}
+
+.clearAll {
+  background: linear-gradient(rgb(231, 81, 61), transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, rgb(93, 25, 156), transparent);
+  background-blend-mode: screen;
+  width: 80px;
+  height: 38px;
+  border-radius: 8px;
+  border: white solid 1px;
+  color: whitesmoke;
+}
+.strike {
+  text-decoration: line-through;
+}

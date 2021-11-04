@@ -1,0 +1,10 @@
+<div class="li" (dblclick)="onUpdate(task)">
+  <div [ngClass]="{ 'text-animation': task.reminder === true }" class="text">
+    <h4>{{ task.hour }}</h4>
+    <h4>{{ task.name }}</h4>
+  </div>
+
+  <div class="del">
+    <fa-icon (click)="delTask(task)" [icon]="faTimes"></fa-icon>
+  </div>
+</div>

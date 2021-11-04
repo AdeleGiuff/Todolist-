@@ -1,0 +1,9 @@
+<div class="form">
+  <app-input>(onAddTask)="addTask($event)" </app-input>
+</div>
+<app-task-item
+  *ngFor="let task of tasks"
+  [task]="task"
+  (onDelete)="deleteTask(task)"
+  (onUpdateReminder)="updateReminder(task)"
+></app-task-item>

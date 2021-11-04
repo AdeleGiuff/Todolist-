@@ -1,0 +1,46 @@
+.li {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid violet;
+  margin-top: -1px; /* Prevent double borders */
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(75, 75, 75);
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.text {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+h4 {
+  margin-right: 30px;
+}
+
+.text-animation {
+  animation: 1s blinker linear infinite;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-animation a {
+  color: #f00;
+}
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

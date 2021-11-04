@@ -1,0 +1,26 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">HOUR</label>
+    <input
+      type="text"
+      id="hour"
+      name="hour"
+      [(ngModel)]="hour"
+      placeholder="Enter the hour"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">TASKS</label>
+    <input
+      type="text"
+      id="newTask"
+      name="newTask"
+      [(ngModel)]="name"
+      placeholder="Enter your tasks"
+    />
+  </div>
+  {{ name }}
+  <div class="myButton">
+    <app-button color="green" text="add"></app-button>
+  </div>
+</form>
