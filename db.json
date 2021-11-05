@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": " Call mom",
-      "reminder": false,
+      "reminder": true,
       "hour": "at 8 "
     },
     {
@@ -35,6 +35,18 @@
       "name": "Take a snap",
       "reminder": false,
       "hour": " at 13 "
+    },
+    {
+      "hour": "at 15",
+      "name": "Go to the gym",
+      "reminder": true,
+      "id": 7
+    },
+    {
+      "hour": "at 16",
+      "name": "Call your dad",
+      "reminder": false,
+      "id": 8
     }
   ]
 }

@@ -10,6 +10,7 @@ export class InputComponent implements OnInit {
   @Output() onAddTask: EventEmitter<Task> = new EventEmitter();
   name: string;
   hour: string;
+  reminder: boolean = false;
   constructor() {}
 
   ngOnInit(): void {}
@@ -23,9 +24,13 @@ export class InputComponent implements OnInit {
     const newTask = {
       hour: this.hour,
       name: this.name,
+      reminder: this.reminder,
     };
+
+    this.onAddTask.emit(newTask);
 
     this.hour = '';
     this.name = '';
+    this.reminder = false;
   }
 }

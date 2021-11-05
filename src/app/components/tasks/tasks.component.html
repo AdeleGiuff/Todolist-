@@ -1,5 +1,5 @@
 <div class="form">
-  <app-input>(onAddTask)="addTask($event)" </app-input>
+  <app-input (onAddTask)="addTask($event)"></app-input>
 </div>
 <app-task-item
   *ngFor="let task of tasks"
